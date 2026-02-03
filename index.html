@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het is te zot voor woorden - Hendrik Vos</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: "Libre Franklin", sans-serif; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 20px; }
+        .article-grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+        img { max-width: 100%; height: auto; }
+        
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .article-grid { grid-template-columns: 1fr; }
+            aside { display: none; } /* Hide sidebar on mobile for better focus */
+            h1 { font-size: 24px; }
+        }
+
+        .premium-tag { color: #5a4848; font-weight: bold; text-transform: uppercase; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://www.standaard.be/">
+                <strong>De Standaard</strong>
+            </a>
+        </header>
+
+        <main class="article-grid">
+            <article>
+                <div class="premium-tag">Column</div>
+                <h1>Het is te zot voor woorden: we pompen Europees geld in Amerikaanse bedrijven die er dan Europese firma’s mee opkopen</h1>
+                <h2>De kapitaalmarkt in Europa is als een spoorwegnet met 27 verschillende spoorbreedten, schrijft Hendrik Vos.</h2>
+                
+                <div class="author-info">
+                    <strong>Hendrik Vos</strong> | <time datetime="2026-02-02">2 februari 2026</time>
+                </div>
+
+                <div class="content">
+                    <p>Groenland willen veroveren was zo grotesk dat daar de grens werd getrokken. De geopolitieke grootheidswaan van Donald Trump botste op een gesloten Europees front...</p>
+                    <p>Het intrigerende aan die kapitaalmarktenunie is dat ze amper bestaat. Probeer maar eens om uw spaargeld op een Litouwse rekening te parkeren, of een hypotheek te nemen in Portugal...</p>
+                    <p>Het resultaat: we pompen Europese spaarcenten in Amerikaanse bedrijven die er vervolgens Europese firma’s mee opkopen. Europese ideeën worden Amerikaanse eigendom. Het is te zot voor woorden.</p>
+                </div>
+            </article>
+
+            <aside>
+                <h3>Meest recent</h3>
+                <ul>
+                    <li><a href="https://www.standaard.be/economie/vlaamse-regering-stopt-noodlijdende-industrie-2-miljard-euro-extra-toe/128257777.html">Vlaamse regering stopt noodlijdende industrie 2 miljard extra toe</a></li>
+                </ul>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
