@@ -5,54 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Het is te zot voor woorden - Hendrik Vos</title>
     <style>
-        body { margin: 0; padding: 0; font-family: "Libre Franklin", sans-serif; line-height: 1.6; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        header { border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 20px; }
-        .article-grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
-        img { max-width: 100%; height: auto; }
-        
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            .article-grid { grid-template-columns: 1fr; }
-            aside { display: none; } /* Hide sidebar on mobile for better focus */
-            h1 { font-size: 24px; }
+        /* Responsive Overlay: Only activates on mobile/tablet */
+        @media (max-width: 1024px) {
+            #SOLID, #CONTENT, .body, .html1, #__next, main {
+                width: 100% !important;
+                min-width: unset !important;
+                margin: 0 !important;
+                padding: 10px !important;
+                display: block !important;
+            }
+            main {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            article, aside, figure, h1, hgroup {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            img {
+                height: auto !important;
+                width: 100% !important;
+            }
+            /* Stack sidebar items vertically on mobile */
+            .content-grid, section {
+                grid-template-columns: 1fr !important;
+            }
         }
-
-        .premium-tag { color: #5a4848; font-weight: bold; text-transform: uppercase; font-size: 12px; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <a href="https://www.standaard.be/">
-                <strong>De Standaard</strong>
-            </a>
-        </header>
+<body class="body" style="margin: 0px; min-height: 100vh; overflow: visible; font-stretch: 100%; border-style: none; line-height: 1; padding: 0px; vertical-align: baseline;">
 
-        <main class="article-grid">
-            <article>
-                <div class="premium-tag">Column</div>
-                <h1>Het is te zot voor woorden: we pompen Europees geld in Amerikaanse bedrijven die er dan Europese firma’s mee opkopen</h1>
-                <h2>De kapitaalmarkt in Europa is als een spoorwegnet met 27 verschillende spoorbreedten, schrijft Hendrik Vos.</h2>
+    <div id="SOLID" style="font-family: 'Times New Roman'; font-size: medium; text-align: -webkit-center; background-color: rgb(238, 238, 238); padding-bottom: 15px;">
+        <div id="CONTENT" style="background-color: white; position: relative; border: 2px solid rgb(153, 153, 153); margin: 0px -2px; width: 1024px; min-height: 768px;">
+            <div class="html1" style="position: relative; z-index: 0; overflow: auto hidden; min-height: 768px; text-align: initial;">
                 
-                <div class="author-info">
-                    <strong>Hendrik Vos</strong> | <time datetime="2026-02-02">2 februari 2026</time>
-                </div>
+                <div id="__next" style="line-height: 16px; margin: 0px; padding: 0px;">
+                    <header style="display: contents;">
+                        <div style="background-color: rgb(242, 242, 242); height: 40px; width: 1023.99px;">
+                            <div style="min-height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 16px;">
+                                <div style="font-weight: 600; font-family: 'Libre Franklin'; font-size: 14px;">De Standaard</div>
+                                <div style="background-color: rgb(217, 0, 0); color: white; padding: 7px 12px; font-size: 14px; border-radius: 2px;">Abonneer</div>
+                            </div>
+                        </div>
+                    </header>
 
-                <div class="content">
-                    <p>Groenland willen veroveren was zo grotesk dat daar de grens werd getrokken. De geopolitieke grootheidswaan van Donald Trump botste op een gesloten Europees front...</p>
-                    <p>Het intrigerende aan die kapitaalmarktenunie is dat ze amper bestaat. Probeer maar eens om uw spaargeld op een Litouwse rekening te parkeren, of een hypotheek te nemen in Portugal...</p>
-                    <p>Het resultaat: we pompen Europese spaarcenten in Amerikaanse bedrijven die er vervolgens Europese firma’s mee opkopen. Europese ideeën worden Amerikaanse eigendom. Het is te zot voor woorden.</p>
-                </div>
-            </article>
+                    <div style="display: grid; grid-template-columns: 1024px;">
+                        <div style="padding: 0 16px;">
+                            <main style="display: grid; grid-template-columns: 298.6px 298.6px 298.6px; gap: 32px; width: 991.99px;">
+                                <article style="grid-area: span 1 / span 2; display: flex; flex-direction: column; gap: 32px;">
+                                    
+                                    <hgroup style="display: flex; flex-direction: column; gap: 16px;">
+                                        <figure style="margin: 0; width: 629px;">
+                                            <img src="be754248b2569a96c33f6d9a02c675e2d3de30fa.jpg" alt="Article Image" style="width: 100%;">
+                                            <figcaption style="color: #666; font-size: 12px; font-family: 'Libre Franklin'; margin-top: 8px;">
+                                                De Europese militaire eensgezindheid... © Afp
+                                            </figcaption>
+                                        </figure>
 
-            <aside>
-                <h3>Meest recent</h3>
-                <ul>
-                    <li><a href="https://www.standaard.be/economie/vlaamse-regering-stopt-noodlijdende-industrie-2-miljard-euro-extra-toe/128257777.html">Vlaamse regering stopt noodlijdende industrie 2 miljard extra toe</a></li>
-                </ul>
-            </aside>
-        </main>
-    </div>
-</body>
-</html>
+                                        <div style="color: #5a4848; font-weight: 600; text-transform: uppercase; font-size: 12px;">column</div>
+                                        <h1 style="font-family: Arnhem, serif; font-size: 32px; line-height: 35.2px; margin: 0;">Het is te zot voor woorden: we pompen Europees geld in Amerikaanse bedrijven...</h1>
+                                        <h2 style="font-family: Arnhem, serif; font-size: 20px; font-
